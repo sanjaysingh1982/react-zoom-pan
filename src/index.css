@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.element {
+  width: fit-content;
+  background: rgba(100, 100, 100, 0.25);
+}
+
+.element img {
+  width: 100%;
+}
+
+.tools {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: calc(100vw - 60px);
+}
+
+@media (max-width: 768px) {
+  .element,
+  .tools {
+    max-width: 90vw;
+    justify-content: center;
+  }
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+.tools button {
+  margin-left: 10px;
+}
+
+.example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-gradient img {
+  width: 22px;
+  height: 22px;
+}
